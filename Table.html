@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+
+    <style>
+         table {
+    margin-right: 25%;
+    margin-left: 15%;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  td, th {
+    border: 5px solid black;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  caption{
+    font-size: 40px;
+  }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            This is sample table
+        </caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Class</th>
+                <th rowspan="2">Roll</th>
+                <th rowspan="2">Phone</th>
+                <th rowspan="2">Email</th>
+                <th rowspan="2">Gender</th>
+                <th colspan="4">Subjects</th>
+                <th rowspan="2">Points</th>
+            </tr>
+            <tr>
+                <th>Maths</th>
+                <th>English</th>
+                <th>Computer</th>
+                <th>Science</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Anamol Shrestha</td>
+                    <td>Bachelor 2nd Sem</td>
+                    <td>1</td>
+                    <td>98*******</td>
+                    <td>ana***@gmail.com</td>
+                    <td>Male</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Manjul Dahal</td>
+                    <td>Bachelor 2nd Sem</td>
+                    <td>2</td>
+                    <td>98*********</td>
+                    <td>manjul@gmail.com</td>
+                    <td>Male</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Narendra Maharjan</td>
+                    <td>Bacelor 2nd Sem</td>
+                    <td>3</td>
+                    <td>98*******</td>
+                    <td>narendra@gmail.com</td>
+                    <td>Male</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Nisha Pandey</td>
+                    <td>Bacelor 2nd Sem</td>
+                    <td>4</td>
+                    <td>98*******</td>
+                    <td>nishapamdey@gmail.com</td>
+                    <td>Female</td>
+                    <td>Fail</td>
+                    <td>Fail</td>
+                    <td>Fail</td>
+                    <td>Fail</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="10"> Total Points</th>
+                <th>120</th>
+            </tfoot>
+        </thead>
+    </table>
+    <table>
+        <caption>
+            Favorite and Least Favorite Things
+        </caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Bob</th>
+                <th>Alice</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Favorite</th>
+                <th>Color</th>
+                <td>Blue</td>
+                <td>Purple</td>
+            </tr>
+            <tr>
+                <th>Flavor</th>
+                <td>Banana</td>
+                <td>Chocolate</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Least Favorite</th>
+                <th>Color</th>
+                <td>Yellow</td>
+                <td>Pink</td>
+            </tr>
+            <tr>
+                <th>Flavor</th>
+                <td>Mint</td>
+                <td>Walnut</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
