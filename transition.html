@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  position:absolute;
+  top: 40%;
+  left: 40%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  color: blue;  
+  transition-property: background-color,transform,width,height,color;  
+  width: 140px;
+  height: 150px;
+  background: red;
+  transition: 2s;
+  transition-delay: 0.2s;
+  
+
+}
+
+div:hover {
+  width: 180px;
+  height: 180px;
+  background-color: gold;
+  transform: rotate(360deg);
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>Transition + Transform</h1>
+
+<p>Hover over the div element below:</p>
+
+<div>Ghumyo</div>
+</body>
+</html>
