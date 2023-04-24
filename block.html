@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Property Example</title>
+	<style>
+		.block {
+			display: block;
+            color: yellow;
+			background-color: orangered;
+			padding: 10px;
+            height: 50px;
+            width: 50px;
+			margin: 10px;
+            box-sizing: content-box;
+		}
+        .inline{
+            display: inline;
+            color: violet;
+			background-color: saddlebrown;
+			padding: 10px;
+            height: 100px;
+            width: 100px;
+			margin: 10px;
+            box-sizing: content-box;
+        }
+        .inline-block{
+            display: inline-block;
+            color: green;
+			background-color: gold;
+			padding: 10px;
+            height: 75px;
+            width: 75px;
+			margin: 10px;
+            box-sizing: content-box;
+        }
+        .container {
+  position: relative;
+  height: 400px;
+  border: 2px solid black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+  color: red;
+  background-color: black;
+}
+
+.box1 {
+  position: static;
+}
+
+.box2 {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.box3 {
+  position: absolute;
+  top: 225px;
+  left: 250px;
+}
+
+.box4 {
+  position: fixed;
+  top: 50px;
+  right: 0px;
+}
+.center-align1{
+  width: 100%;
+  background: red;
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  color: gold;
+}
+.center-align2{
+  display: grid;
+  place-items: center;
+  background: green;
+  height: 300px;
+  font-size: xx-large;
+  color: blue;
+}
+.center-align3{
+  position: relative;
+  height: 300px;
+  background: salmon;
+  color:purple;
+  font-size: xx-large;
+}
+.center-align3 > p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+	</style>
+</head>
+<body>
+	<div class="block">This is block box</div>
+    <div class="block">This is block box</div>
+    <div class="block">This is block box </div>
+
+    <div class="inline">This is inline box</div>
+    <div class="inline">This is inline box</div>
+    <div class="inline">This is inline box </div>
+
+    <div class="inline-block">This is inline-block box</div>
+    <div class="inline-block">This is inline-block box</div>
+    <div class="inline-block">This is inline-block box </div>
+    </div>
+    <div class="container">
+        <div class="box box1">Static</div>
+        <div class="box box2">Relative</div>
+        <div class="box box3">Absolute</div>
+        <div class="box box4">Fixed</div>
+      </div>
+      <div class="center-align1">This is flex.</div>
+      <div class="center-align2">This is grid.</div>
+      <div class="center-align3"><p>This is center.</p></div>
+</body>
+</html>
