@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <p id="'result">The result is: </p>
+    <p id="input">Please enter your marks: </p>
+    <script>
+       var marks = prompt("Enter your marks: ");
+        
+        function myfunction(){
+            document.getElementById("input").innerHTML;
+            switch (marks){
+            case (marks>=70):
+                document.getElementById("result").innerHTML = "Your grade is Distinction";
+                break;
+            case (marks<70 && marks>=60):
+                document.getElementById("result").innerHTML = "Your grade is First Class";
+                break;
+            case (marks<60 && marks>=50):
+                document.getElementById("result").innerHTML = "Your grade is Second Class";
+                break;
+            case (marks<50 && marks>=40):
+                document.getElementById("result").innerHTML = "Your grade is Third Class";
+                break;
+            default:
+                document.getElementById("result").innerHTML = "Your grade is Fail";
+            }
+
+            
+        }
+    </script>
+</body>
+</html>
